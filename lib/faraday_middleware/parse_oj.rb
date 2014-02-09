@@ -11,5 +11,6 @@ module FaradayMiddleware
     VERSION = '0.2.1'
   end
 end
-
-#Faraday.register_middleware :response, oj: FaradayMiddleware::ParseOj
+if Faraday.respond_to? :register_middleware
+    Faraday.register_middleware :response, oj: FaradayMiddleware::ParseOj
+end
