@@ -15,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
   gem.version       = FaradayMiddleware::ParseOj::VERSION
   
-  gem.add_runtime_dependency 'faraday_middleware', :github => 'voff/faraday_middleware'
+  gem.add_runtime_dependency 'faraday_middleware', '~> 0.8'
   gem.add_runtime_dependency 'oj',                 '~> 2.0'
   
   gem.add_development_dependency 'rake'
